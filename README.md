@@ -38,17 +38,24 @@ Diabetes/
 ├── data/                  # Исходные данные  
 │   └── diabetes_012_health_indicators.csv  # Датасет  
 │  
+├── logs/                  # Логи Spark (создаются при запуске)
+│   ├── log_DataNodes_1_opt_False.txt
+│   ├── log_DataNodes_1_opt_True.txt
+│   ├── log_DataNodes_3_opt_False.txt
+│   └── log_DataNodes_3_opt_True.txt
+│
+├── results imgs/         # р=визуализация результатов  
+│  
 ├── scripts/               # Скрипты для обработки и запуска  
 │   ├── HDFS.sh           # Загрузка данных в HDFS  
 │   ├── Spark.sh          # Запуск Spark-приложения  
-│   └── spark_app.py      # Код Spark-приложения  
-│  
-├── docker/               # Docker-конфигурации  
-│   ├── docker-compose.yml          # Композ для 1 DataNode  
-│   └── docker-compose-3.yml        # Композ для 3 DataNode  
-│  
-├── logs/                 # Логи работы  
-│   └── log_DataNodes_*_opt_*.txt  # Результаты выполнения  
+│   └── spark_app.py      # Код Spark-приложения              
+│
+│── docker-compose.yml          # Композ для 1 DataNode  
+│── docker-compose-3.yml        # Композ для 3 DataNode  
+├── EDA+models+visual.ipynb     # БЛОКНОТ
+├── run.sh                      # bash скрипт для быстрого запуска тест-кейсов
+├── hadoop.env                  # файл с переменными окружения для контейнеров
 │  
 └── README.md             # Описание проекта  
 
