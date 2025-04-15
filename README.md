@@ -33,6 +33,22 @@ Big Data
 
 Если вам нужно ознакомиться с предварительной обработкой данных и подбором гиперпараметров модели, вы можете ноутбук EDA + models + visualisation с необходимыми процессами.
 
-## Структура репозитория
-
+## Структура репозитория  
+Diabetes/  
+├── data/                  # Исходные данные  
+│   └── diabetes_012_health_indicators.csv  # Датасет  
+│  
+├── scripts/               # Скрипты для обработки и запуска  
+│   ├── HDFS.sh           # Загрузка данных в HDFS  
+│   ├── Spark.sh          # Запуск Spark-приложения  
+│   └── spark_app.py      # Код Spark-приложения  
+│  
+├── docker/               # Docker-конфигурации  
+│   ├── docker-compose.yml          # Композ для 1 DataNode  
+│   └── docker-compose-3.yml        # Композ для 3 DataNode  
+│  
+├── logs/                 # Логи работы  
+│   └── log_DataNodes_*_opt_*.txt  # Результаты выполнения  
+│  
+└── README.md             # Описание проекта  
 
